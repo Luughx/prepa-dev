@@ -1,27 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <Navbar ref="navbar" v-if="!$store.getters.hideInterface"/>
+  <router-view />
+  <Footer v-if="!$store.getters.hideInterface && !$store.getters.hideFooter" />
+
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent, defineAsyncComponent} from "@vue/runtime-core";
 
-@Options({
+const Navbar =  defineAsyncComponent(() => import("@/components/Navbar-Component.vue"))
+const Footer =  defineAsyncComponent(() => import("@/components/Footer-component.vue"))
+
+export default defineComponent({
+  name: 'App', 
   components: {
-    HelloWorld,
-  },
+    Navbar,
+    Footer
+  }
 })
-export default class App extends Vue {}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

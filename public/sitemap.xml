@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.daraan.site/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/avisos/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/anecdotas/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/panel/iniciar-sesion/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/reglamento/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/calendarios/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/nosotros/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/contactanos/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/usuarios/iniciar-sesion/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/usuarios/registrarse/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.daraan.site/fundacion/</loc>
+  <lastmod>2023-02-23T00:30:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

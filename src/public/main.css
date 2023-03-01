@@ -1,0 +1,187 @@
+.hr-night {
+    color: #5d5d5d;
+    
+}
+
+hr {
+    color: #cdcdcd;
+    border: 1px solid;
+}
+
+.night-bg {
+    background: #1d2023;
+    color: #ededed;
+}
+
+.chart-scores {
+    height: 50vh;
+}
+
+.pagination-night-disabled {
+    color: #ededed;
+    background: #333333;
+    border: 1px solid #333333;
+}
+
+.size-hover:hover {
+    transform: scale(1.05);
+}
+
+.pagination-night-disabled:hover {
+    cursor: default;
+    color: #ededed;
+    background: #333333;
+    border: 1px solid #333333;
+}
+
+.pagination-night {
+    color: #ededed;
+    background: #171717;
+    border: 1px solid #333333;
+}
+
+.pagination-night:hover {
+    color: #ededed;
+    background: #333333;
+    border: none;
+}
+
+.input-night {
+    background: #212529;
+    color: #ededed;
+    border: 2px solid #333333;
+    content: "sadsa";
+}
+
+.input-night:-webkit-autofill,
+.input-night:-webkit-autofill:hover, 
+.input-night:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #1d2023 inset;
+    -webkit-text-fill-color: #fff;
+}
+
+.input-night:active {
+    background: #222222;
+    color: #ededed;
+} 
+
+.input-night:focus {
+    background: #222222;
+    color: #ededed;
+} 
+
+.input-night:enabled {
+    background: #212529;
+    color: #ededed;
+}
+
+.card-night {
+    background: #212529;
+    color: #fafafa;
+}
+
+.day-bg {
+    background: #ededed;
+}
+
+.padre-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-config {
+    width: 50%;
+}
+.flex {
+    display: flex;
+}
+
+.padre-centrar {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.hijo-centrar {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.division-div {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.division-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.section-div {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.section-div-sidebar-avisos {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.section-div-avisos {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.section-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: none;
+}
+
+.img-slideshow {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    object-fit: none;
+}
+
+.borderless {
+    border: 0px solid;
+}
+
+.title-notice {
+    text-decoration: none;
+    color: black;
+}
+
+.title-notice:hover {
+    color: black;
+}
+
+.title-notice-night {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-notices {
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .sidebar-notices {
+        display: none;
+    }
+}

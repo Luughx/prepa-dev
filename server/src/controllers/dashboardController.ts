@@ -236,11 +236,20 @@ export const getDownloadScores = async (req: any, res: any) => {
 
     const resAxios = await axios.post("http://67.225.220.160/~prepaco1/boletapdf/rep.php", formDataScore, { responseType: "stream" })
     await writeFile(urlPdf, resAxios.data)
-    //unlink(join(__dirname, `../public/pdf/uploads/${namePdf}.pdf`))
 
+    req.session.fileDownloadStudent = urlPdf
 
-    await res.sendFile(urlPdf)
-    //await unlink(url)
+    res.sendFile(urlPdf)
+}
+
+export const deleteFileScores = async (req: any, res: any) => {
+    const { fileDownloadStudent } = req.session
+    if (!fileDownloadStudent) return res.send(false)
+
+    await unlink(req.session.fileDownloadStudent)
+    delete req.session.fileDownloadStudent
+
+    res.send(true)
 }
 
 export const deleteDataStudent = async (req: any, res: any) => {

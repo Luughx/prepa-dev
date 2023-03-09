@@ -173,7 +173,7 @@
     /* eslint-disable */
     import { defineComponent } from "vue-demi";
     import Sidebar from "@/components/Sidebar-component.vue";
-    import { getDownloadScores } from "@/services/StudentService";
+    import { getDownloadScores, deleteFileScores } from "@/services/StudentService";
     import useVuelidate from '@vuelidate/core';
     import { required, helpers } from "@vuelidate/validators";
 
@@ -188,9 +188,6 @@
         Legend
     } from 'chart.js'
     import { Line } from 'vue-chartjs'
-import { faStream } from "@fortawesome/free-solid-svg-icons";
-import { file } from "@babel/types";
-
     ChartJS.register(
         CategoryScale,
         LinearScale,
@@ -386,9 +383,8 @@ import { file } from "@babel/types";
             }
         },
         async mounted() {
-
-
             this.getStatus()
+            await deleteFileScores()
         },
         methods: {
             getStatus() {
@@ -416,14 +412,15 @@ import { file } from "@babel/types";
                 formData.append("accion", "Buscar")
 
                 const resAxios = await axios.post("http://67.225.220.160/~prepaco1/boletapdf/rep.php/", formData, { responseType: "blob", headers: {"Access-Control-Allow-Origin": "*"} })
-                 */
+                */
 
-                this.loadingDownload = true
-                const res = await getDownloadScores()
-                const file = new File([res.data], "boleta", { type: "application/pdf"})
-
-                window.open(URL.createObjectURL(file))
-                this.loadingDownload = false
+               this.loadingDownload = true
+               const res = await getDownloadScores()
+               const file = new File([res.data], "boleta", { type: "application/pdf"})
+               
+               window.open(URL.createObjectURL(file))
+               this.loadingDownload = false
+               await deleteFileScores()
             },
             async changeCurrentData() {
                 if (this.currentSubject == 0) {

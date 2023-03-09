@@ -17,6 +17,11 @@ export const getDownloadScores = async () => {
     return res
 }
 
+export const deleteFileScores = async () => {
+    const res = await axios.delete("/dashboard/scores/delete")
+    return res
+}
+
 export const deleteLoginStudent = async () => {
     const res = await axios.delete("/dashboard/deletedata")
     return res
